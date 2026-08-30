@@ -24,11 +24,13 @@ const WISHES = [
   { icon: Sparkles, text: "More laughter, more love, and more reasons to celebrate." },
 ];
 
-const PHOTO_PLACEHOLDERS = [
-  { label: "A childhood memory", prompt: "Replace with a childhood photo of the two of you" },
-  { label: "A milestone together", prompt: "Replace with a graduation, trip, or celebration photo" },
-  { label: "One of her biggest smiles", prompt: "Replace with a candid photo that captures her joy" },
-  { label: "A recent favorite", prompt: "Replace with a recent photo you love" },
+// To swap a photo: upload a new one in chat and I'll update the `src` here,
+// or set `src: ""` to show the "add a photo" placeholder card again.
+const PHOTOS = [
+  { src: photo1.url, label: "Just us two", prompt: "Add a photo of the two of you" },
+  { src: photo2.url, label: "Festive days", prompt: "Add a festival or celebration photo" },
+  { src: photo3.url, label: "All dressed up", prompt: "Add a favorite dressed-up moment" },
+  { src: photo4.url, label: "Birthday throwback", prompt: "Add a past birthday photo" },
 ];
 
 // ------------------------------------------------------------------
