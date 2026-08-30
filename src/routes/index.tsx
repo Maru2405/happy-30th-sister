@@ -249,7 +249,7 @@ function Index() {
               Moments with you
             </h3>
             <p className="mt-3 text-muted-foreground">
-              Four photo placeholders ready for your favorite memories together.
+              A few of my favorite memories with you.
             </p>
           </div>
 
