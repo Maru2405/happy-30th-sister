@@ -35,11 +35,11 @@ const PHOTO_PLACEHOLDERS = [
 // Confetti
 // ------------------------------------------------------------------
 const CONFETTI_COLORS = [
-  "var(--color-plum)",
-  "var(--color-coral)",
-  "var(--color-teal)",
-  "var(--color-gold)",
-  "var(--color-rose)",
+  "#2E1A47",
+  "#FF6B6B",
+  "#4ECDC4",
+  "#FFE66D",
+  "#C75B5B",
 ] as const;
 
 function Confetti() {
