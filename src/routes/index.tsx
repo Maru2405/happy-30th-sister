@@ -1,6 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import { Camera, Heart, Sparkles, Star, Sun } from "lucide-react";
+import photo1 from "@/assets/IMG-20260830-WA0014.jpg.asset.json";
+import photo2 from "@/assets/IMG-20260830-WA0015.jpg.asset.json";
+import photo3 from "@/assets/IMG-20260830-WA0017.jpg.asset.json";
+import photo4 from "@/assets/IMG-20200830-WA0036.jpg.asset.json";
 
 // ------------------------------------------------------------------
 // Personalize everything here
