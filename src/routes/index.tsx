@@ -40,7 +40,7 @@ const CONFETTI_COLORS = [
   "var(--color-teal)",
   "var(--color-gold)",
   "var(--color-rose)",
-];
+] as const;
 
 function Confetti() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
