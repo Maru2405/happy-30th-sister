@@ -9,15 +9,15 @@ import photo4 from "@/assets/IMG-20200830-WA0036.jpg.asset.json";
 // ------------------------------------------------------------------
 // Personalize everything here
 // ------------------------------------------------------------------
-const SISTER_NAME = "Shrutika";
+const SISTER_NAME = "Sister";
 const FROM_NAME = "your youngest sibling"; // e.g. "Aanya"
 
 const LETTER_PARAGRAPHS = [
-  `${SISTER_NAME}, turning 30 feels like a milestone the whole family gets to celebrate — but for me, it’s extra special. With ten years between us, I’ve spent most of my life looking up to you. You were already a teenager when I was still figuring out how to tie my shoes, and somehow that gap only made you feel larger than life.`,
-  `I remember watching you navigate school, friendships, and big decisions long before I had to face any of it myself. You made growing up look graceful, even when I know now that it wasn’t always easy. [Add a specific memory, inside joke, or piece of advice she gave you here.]`,
+  `My dear sister, turning 30 feels like a milestone the whole family gets to celebrate — but for me, it’s extra special. With ten years between us, I’ve spent most of my life looking up to you. You were already a teenager when I was still figuring out how to tie my shoes, and somehow that gap only made you feel larger than life.`,
+  `I remember watching you navigate school, friendships, and big decisions long before I had to face any of it myself. You made growing up look graceful, even when I know now that it wasn’t always easy.`,
   `You’ve been my protector, my translator into the adult world, and the person whose approval always meant the most. From the big things to the small, you showed me what it means to be kind, strong, and unapologetically yourself.`,
   `Now, as you step into this new decade, I see not just the sister who looked out for me, but the woman you’ve become — confident, warm, magnetic, and someone I’m still learning from every single day.`,
-  `Happy 30th birthday, ${SISTER_NAME}. Thank you for being my first role model, my safe place, and my friend. I love you more than words can hold.`,
+  `Happy 30th birthday, Sister. Thank you for being my first role model, my safe place, and my friend. I love you more than words can hold.`,
 ];
 
 const WISHES = [
