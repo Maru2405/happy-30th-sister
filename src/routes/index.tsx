@@ -96,7 +96,9 @@ function Confetti() {
           dr: Math.random() * 6 - 3,
           gravity: Math.random() * 0.08 + 0.04,
           opacity: 1,
-          color: CONFETTI_COLORS[Math.floor(Math.random() * CONFETTI_COLORS.length)],
+          color:
+            CONFETTI_COLORS[Math.floor(Math.random() * CONFETTI_COLORS.length)] ??
+            CONFETTI_COLORS[0],
           tilt: Math.random() * 10,
           tiltAngle: Math.random() * 10,
           tiltAngleIncr: Math.random() * 0.1 + 0.05,
