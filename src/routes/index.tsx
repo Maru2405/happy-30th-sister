@@ -250,23 +250,37 @@ function Index() {
           </div>
 
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {PHOTO_PLACEHOLDERS.map((photo, index) => (
-              <div
-                key={index}
-                className="group relative flex aspect-[4/5] flex-col items-center justify-center overflow-hidden rounded-2xl border-2 border-dashed border-primary/30 bg-card p-6 text-center transition-all duration-300 hover:-translate-y-1 hover:border-coral hover:shadow-xl"
-              >
-                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-secondary/60 text-ink transition-colors group-hover:bg-coral group-hover:text-cream">
-                  <Camera className="h-6 w-6" />
+            {PHOTOS.map((photo, index) =>
+              photo.src ? (
+                <figure
+                  key={index}
+                  className="group relative aspect-[4/5] overflow-hidden rounded-2xl border border-border bg-card shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+                >
+                  <img
+                    src={photo.src}
+                    alt={`${photo.label} — ${SISTER_NAME} with her youngest sibling`}
+                    loading="lazy"
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-plum/85 to-transparent p-4 text-left font-display text-lg font-medium text-cream">
+                    {photo.label}
+                  </figcaption>
+                </figure>
+              ) : (
+                <div
+                  key={index}
+                  className="group relative flex aspect-[4/5] flex-col items-center justify-center overflow-hidden rounded-2xl border-2 border-dashed border-primary/30 bg-card p-6 text-center transition-all duration-300 hover:-translate-y-1 hover:border-coral hover:shadow-xl"
+                >
+                  <div className="flex h-14 w-14 items-center justify-center rounded-full bg-secondary/60 text-ink transition-colors group-hover:bg-coral group-hover:text-cream">
+                    <Camera className="h-6 w-6" />
+                  </div>
+                  <p className="mt-4 font-display text-lg font-medium text-ink">
+                    {photo.label}
+                  </p>
+                  <p className="mt-2 text-sm text-muted-foreground">{photo.prompt}</p>
                 </div>
-                <p className="mt-4 font-display text-lg font-medium text-ink">
-                  {photo.label}
-                </p>
-                <p className="mt-2 text-sm text-muted-foreground">{photo.prompt}</p>
-                <span className="absolute bottom-4 right-4 text-xs font-semibold text-muted-foreground/60">
-                  {index + 1}/4
-                </span>
-              </div>
-            ))}
+              ),
+            )}
           </div>
         </div>
       </section>
